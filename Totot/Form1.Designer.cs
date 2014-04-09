@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,10 +49,9 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,8 +61,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.button1);
@@ -70,17 +72,40 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(0, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 458);
+            this.panel1.Size = new System.Drawing.Size(272, 458);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 364);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(197, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Nog geen account meld je dan hier aan.";
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button6.Location = new System.Drawing.Point(0, -4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(261, 83);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Sign In";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.panel4.Controls.Add(this.button2);
-            this.panel4.Location = new System.Drawing.Point(0, 389);
+            this.panel4.Location = new System.Drawing.Point(0, 392);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(261, 511);
+            this.panel4.Size = new System.Drawing.Size(261, 499);
             this.panel4.TabIndex = 7;
             // 
             // button2
@@ -89,9 +114,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button2.Location = new System.Drawing.Point(0, 6);
+            this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(258, 56);
+            this.button2.Size = new System.Drawing.Size(258, 66);
             this.button2.TabIndex = 5;
             this.button2.Text = "Sign Up";
             this.button2.UseVisualStyleBackColor = true;
@@ -151,7 +176,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.flowLayoutPanel2);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
             this.panel2.ForeColor = System.Drawing.Color.White;
@@ -239,33 +264,31 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 46);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 69);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(271, 458);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(271, 435);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
-            // button6
+            // flowLayoutPanel2
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(261, 79);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Sign In";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.DarkRed;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 46);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(269, 33);
+            this.flowLayoutPanel2.TabIndex = 11;
             // 
-            // label3
+            // button3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 373);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Nog geen account meld je dan hier aan.";
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(247, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(23, 23);
+            this.button3.TabIndex = 10;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // panel5
             // 
@@ -273,19 +296,8 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Location = new System.Drawing.Point(0, 46);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(267, 24);
-            this.panel5.TabIndex = 0;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(233, -3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 27);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Sign In";
-            this.button3.UseVisualStyleBackColor = true;
+            this.panel5.Size = new System.Drawing.Size(270, 27);
+            this.panel5.TabIndex = 11;
             // 
             // Form1
             // 
@@ -301,6 +313,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -336,8 +349,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

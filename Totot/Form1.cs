@@ -40,6 +40,8 @@ namespace Totot
         {
             button3.Hide();
             button6.Hide();
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.button3, "Logout");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -120,6 +122,16 @@ namespace Totot
             button2.Show();
             button6.Hide();
             label3.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            for (int i = 0; i < panel1.Width; i++)
+            {
+                panel1.Location = new Point(panel1.Location.X + 1, panel1.Location.Y);
+                System.Threading.Thread.Sleep(1);
+            }
+            button3.Hide();
         }
     }
 }
