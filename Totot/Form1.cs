@@ -39,11 +39,12 @@ namespace Totot
         private void Form1_Load(object sender, EventArgs e)
         {
             button3.Hide();
+            button6.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             for (int i = 0; i < panel1.Width; i++)
             {
                 panel1.Location = new Point(panel1.Location.X - 1, panel1.Location.Y);
@@ -54,7 +55,7 @@ namespace Totot
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button4_MouseHover(object sender, EventArgs e)
@@ -104,6 +105,22 @@ namespace Totot
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel4.Location = new Point(panel4.Location.X, 78);
+            button2.Hide();
+            button6.Show();
+            label3.Hide();
+            
+        }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel4.Location = new Point(panel4.Location.X, 389);
+            button2.Show();
+            button6.Hide();
+            label3.Show();
+        }
     }
 }
+
