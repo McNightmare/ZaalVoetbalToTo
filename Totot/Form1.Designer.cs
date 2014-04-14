@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -41,21 +41,20 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,9 +71,23 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Location = new System.Drawing.Point(0, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 458);
+            this.panel1.Size = new System.Drawing.Size(271, 454);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button6.Location = new System.Drawing.Point(0, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(261, 83);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Log in";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label3
             // 
@@ -84,20 +97,6 @@
             this.label3.Size = new System.Drawing.Size(197, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Nog geen account meld je dan hier aan.";
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button6.Location = new System.Drawing.Point(0, -4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(261, 83);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Sign In";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel4
             // 
@@ -118,7 +117,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(258, 66);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Sign Up";
+            this.button2.Text = "Registreer";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -127,36 +126,37 @@
             this.panel3.BackColor = System.Drawing.Color.DarkOrange;
             this.panel3.Location = new System.Drawing.Point(260, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 458);
+            this.panel3.Size = new System.Drawing.Size(10, 469);
             this.panel3.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(142, 109);
+            this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button1.Location = new System.Drawing.Point(126, 95);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(103, 28);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Sign In";
+            this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 62);
+            this.label2.Location = new System.Drawing.Point(22, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
+            this.label2.Text = "Wachtwoord";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 36);
+            this.label1.Location = new System.Drawing.Point(22, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Username";
+            this.label1.Text = "Gebruikersnaam";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox2
@@ -186,6 +186,14 @@
             this.panel2.TabIndex = 6;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.DarkRed;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 46);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(269, 33);
+            this.flowLayoutPanel2.TabIndex = 11;
+            // 
             // button5
             // 
             this.button5.FlatAppearance.BorderSize = 0;
@@ -199,7 +207,7 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
-            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseMove);
             // 
             // button4
             // 
@@ -214,68 +222,36 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
-            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseMove);
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(299, 69);
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(23, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(127, 138);
+            this.groupBox1.Size = new System.Drawing.Size(234, 248);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Poule A";
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(474, 69);
+            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(280, 95);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(127, 138);
+            this.groupBox2.Size = new System.Drawing.Size(234, 248);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Poule B";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Location = new System.Drawing.Point(645, 69);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(127, 138);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Poule C";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Location = new System.Drawing.Point(365, 269);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(127, 138);
-            this.groupBox4.TabIndex = 9;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Poule D";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Location = new System.Drawing.Point(578, 269);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(127, 138);
-            this.groupBox5.TabIndex = 8;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Poule E";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 69);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(271, 435);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(271, 431);
             this.flowLayoutPanel1.TabIndex = 10;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.DarkRed;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 46);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(269, 33);
-            this.flowLayoutPanel2.TabIndex = 11;
             // 
             // button3
             // 
@@ -299,21 +275,27 @@
             this.panel5.Size = new System.Drawing.Size(270, 27);
             this.panel5.TabIndex = 11;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.groupBox2);
+            this.panel6.Controls.Add(this.groupBox1);
+            this.panel6.Location = new System.Drawing.Point(264, 46);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(533, 454);
+            this.panel6.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(800, 503);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -323,6 +305,7 @@
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -342,9 +325,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button6;
@@ -352,6 +332,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 

@@ -46,11 +46,10 @@ namespace Totot
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             for (int i = 0; i < panel1.Width; i++)
             {
                 panel1.Location = new Point(panel1.Location.X - 1, panel1.Location.Y);
-                System.Threading.Thread.Sleep(1);
+                System.Threading.Thread.Sleep(0);
             }
             button3.Show();
         }
@@ -60,7 +59,7 @@ namespace Totot
 
         }
 
-        private void button4_MouseHover(object sender, EventArgs e)
+        private void button4_MouseMove(object sender, EventArgs e)
         {
             button4.ForeColor = Color.DarkOrange;
         }
@@ -71,7 +70,7 @@ namespace Totot
 
         }
 
-        private void button5_MouseHover(object sender, EventArgs e)
+        private void button5_MouseMove(object sender, EventArgs e)
         {
             button5.ForeColor = Color.DarkOrange;
 
@@ -129,9 +128,14 @@ namespace Totot
             for (int i = 0; i < panel1.Width; i++)
             {
                 panel1.Location = new Point(panel1.Location.X + 1, panel1.Location.Y);
-                System.Threading.Thread.Sleep(1);
+                System.Threading.Thread.Sleep(0);
             }
             button3.Hide();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
